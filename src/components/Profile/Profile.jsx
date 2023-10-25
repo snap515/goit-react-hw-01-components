@@ -1,30 +1,33 @@
-export const Profile = (props) => {
-  const { avatar, username, tag, location, stats } = props;
-  return <div className="profile">
-  <div className="description">
-    <img
+import { ProfileTag, Desc, Photo, Name, Tag, Location, Stats,StatItem, Label, Quantity } from "./Profile.styled"
+
+
+
+export const Profile = ({ avatar, username, tag, location, stats }) => {
+  return <ProfileTag>
+  <Desc>
+    <Photo
       src={avatar}
       alt={username}
       className="avatar"
     />
-      <p className="name">{username }</p>
-      <p className="tag">@{ tag}</p>
-    <p className="location">{location}</p>
-  </div>
+      <Name>{username }</Name>
+      <Tag>@{ tag}</Tag>
+    <Location>{location}</Location>
+  </Desc>
 
-  <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
-        <span className="quantity">{stats.followers }</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views}</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
-    </li>
-  </ul>
-</div>
+  <Stats>
+    <StatItem>
+      <Label>Followers</Label>
+        <Quantity>{stats.followers }</Quantity>
+    </StatItem>
+    <StatItem>
+      <Label>Views</Label>
+      <Quantity>{stats.views}</Quantity>
+    </StatItem>
+    <StatItem>
+      <Label>Likes</Label>
+      <Quantity>{stats.likes}</Quantity>
+    </StatItem>
+  </Stats>
+</ProfileTag>
 }
