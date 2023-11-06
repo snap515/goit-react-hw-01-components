@@ -3,7 +3,7 @@ import { ProfileTag, Desc, Photo, Name, Tag, Location, Stats,StatItem, Label, Qu
 
 
 export const Profile = ({ avatar, username, tag, location, stats }) => {
-  return <ProfileTag>
+  return (<ProfileTag>
   <Desc>
     <Photo
       src={avatar}
@@ -29,5 +29,5 @@ export const Profile = ({ avatar, username, tag, location, stats }) => {
       <Quantity>{stats.likes}</Quantity>
     </StatItem>
   </Stats>
-</ProfileTag>
+</ProfileTag>)
 }

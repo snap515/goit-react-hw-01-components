@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 export const ProfileTag = styled.div`
-  display: flex;
-  flex-direction: column; /* Отображение элементов вертикально */
-  align-items: center;
+  display: block; /* Отображение элементов вертикально */
   background-color: #1877f2; /* Синий цвет для фона карточки */
   padding: 20px;
   border-radius: 5px;

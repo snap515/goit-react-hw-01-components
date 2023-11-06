@@ -1,16 +1,18 @@
+import { StatElement, StatSection, StatList, StatLabel, StatPercent } from "./Statistics.styled"
+
 export const Statistics = props =>
 {
   console.log(props)
-  return (<section className="statistics">
+  return (<StatSection className="statistics">
     {props.title && <h2 className="title">{props.title}</h2> }
 
-    <ul className="stat-list">
+    <StatList className="stat-list">
       {props.data.map(elem =>
-          (<li key={elem.id} className="item">
-            <span className="label">{elem.label}</span>
-            <span className="percentage">{elem.percentage}</span>
-          </li>))}
+          (<StatElement key={elem.id} className="item">
+            <StatLabel className="label">{elem.label}</StatLabel>
+            <StatPercent className="percentage">{elem.percentage}</StatPercent>
+          </StatElement>))}
           
-  </ul>
-</section>)
+  </StatList>
+</StatSection>)
 }
