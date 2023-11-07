@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 export const ProfileTag = styled.div`
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
 `;
 
 export const Desc = styled.div`
   background-color: var(--bg-color);
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
