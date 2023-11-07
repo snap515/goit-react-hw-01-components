@@ -1,66 +1,63 @@
 import styled from 'styled-components';
 export const ProfileTag = styled.div`
-  display: block; /* Отображение элементов вертикально */
-  background-color: #1877f2; /* Синий цвет для фона карточки */
-  padding: 20px;
-  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
 export const Desc = styled.div`
+  background-color: var(--bg-color);
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   display: flex;
-  flex-direction: column; /* Отображение элементов вертикально */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 `;
 
 export const Photo = styled.img`
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  max-width: 150px;
+  border-radius: 45%;
+  background-color: yellow;
 `;
 
 export const Name = styled.p`
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: white; /* Белый цвет текста для имени */
+  font-size: 30px;
+  margin-bottom: 5px;
 `;
 
 export const Tag = styled.p`
-  font-size: 18px;
-  color: white; /* Белый цвет текста для тэга */
-  background-color: #1877f2; /* Синий цвет для фона тэга */
-  padding: 5px 10px; /* Отступы для фона тэга */
-  border-radius: 5px;
-  margin-bottom: 10px;
+  color: var(--secondary-fc);
+  font-size: var(--secondary-fs);
+  margin-bottom: 5px;
 `;
 
 export const Location = styled.p`
-  font-size: 16px;
-  color: #65676b; /* Серый цвет для локации */
-  margin-bottom: 20px;
+  color: var(--secondary-fc);
+  font-size: var(--secondary-fs);
 `;
 
 export const Stats = styled.ul`
-  list-style: none;
   display: flex;
-  flex-direction: column; /* Отображение элементов вертикально */
-  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(240, 240, 240);
 `;
 
 export const StatItem = styled.li`
-  text-align: center;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 `;
 
 export const Label = styled.span`
-  font-size: 14px;
-  color: #333; /* Черный цвет текста для метки */
+  font-size: var(--main-fs);
+  color: var(--secondary-fc);
+  margin-bottom: 5px;
 `;
 
 export const Quantity = styled.span`
-  font-size: 18px;
+  font-size: var(--secondary-fs);
+  color: var(--main-fc);
   font-weight: bold;
-  color: #333;
 `;
